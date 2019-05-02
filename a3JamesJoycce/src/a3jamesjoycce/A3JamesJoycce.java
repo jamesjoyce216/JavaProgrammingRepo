@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class A3JamesJoycce {
+    public static void main(String[] args) {
+        
+        //Generate heads or tails
+        int flip = (int)(Math.random() * 2);
+        
+        //Prompt for guess, 0 being heads, 1 being tails
+        Scanner input = new Scanner(System.in);
+        System.out.print ("Guess heads or Tails(0 or 1): ");
+        int guess = input.nextInt();
+
+        System.out.println ("Flip Results: " + flip );
+        
+        //Check guess
+        if (guess == flip)
+            System.out.println ("You Win!   Hurray!" );
+        
+        else 
+            System.out.println ("You Failed!");
+        }
+    
+}
